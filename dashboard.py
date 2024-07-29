@@ -11,7 +11,7 @@ st.set_page_config(layout='wide')
 
 #Title of the page  and introduction message
 st.title('Dashboard de ventas :shopping_trolley:')
-st.write('HOLA')
+#st.write('HOLA')
 
 def formata_numero(valor, prefijo = ''):
 	for unidad in ['', 'k']:
@@ -24,7 +24,7 @@ def formata_numero(valor, prefijo = ''):
 #Obtaining CSV file from a github's public repository 
 df_final_raw= pd.read_csv('https://raw.githubusercontent.com/LeopoldoGitHub/Dashboard_Ventas_BCX/main/BBDD/df_final.csv')
 df_final_raw['fecha_compra'] = pd.to_datetime(df_final_raw['fecha_compra'])
-st.dataframe(df_final_raw)
+#st.dataframe(df_final_raw)
 
 
 # Create sidebar for filtering
